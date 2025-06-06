@@ -1,7 +1,7 @@
 class Solution {
 private:
     bool isQueenSafe(int row, int col, int n, vector<vector<bool>>& board) {
-        // for d1 => r--, c--
+        // for d1 => r--, c-- 
         for (int r = row - 1, c = col - 1; r >= 0 && c >= 0; r--, c--) {
             if (board[r][c] == true) {
                 return false;
